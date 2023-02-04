@@ -98,3 +98,6 @@ body, html {
 
 /* -------------------- Settings One Page --------------------  */
 
+#pageSecond {
+    display: none;
+}
