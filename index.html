@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <!-- Require Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Ttitle Page -->
+    <title>Redirect...</title>
+
+    <!-- Import Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <style>
+        /* Fonts Import */
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+
+            background: #222020;
+        }
+        * {
+            color: #fefefe;
+            font-family: 'Kanit', sans-serif;
+        }
+        .containerMsg {
+            background: #2a2929;
+            padding: 1rem 3rem 1rem 3rem;
+            border-radius: 12px;
+            box-shadow: 12px 12px 23px #00000077;
+        }
+        .containerMsg > h1 {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .btnNextPage {
+            background: #0b8ce9;
+            border-radius: 32px;
+            padding: .3rem 2rem .2rem 2rem;
+            color: #ffffff;
+            font-size: 2rem;
+            font-weight: 900;
+            border: none;
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            transition: .35s;
+            cursor: pointer;
+        }
+        .btnNextPage > i {
+            font-size: 2.5rem;
+        }
+        .btnNextPage:hover {
+            transform: scale(0.9);
+            opacity: .7;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <!-- Components -->
+
+    <noscript>
+        <!-- No Javascript -->
+        <div class="containerMsg">
+            <h1>
+                <i class='bx bxs-error'></i>
+                Please enable javascript to continue.
+            </h1> 
+            <button id="btnDone" type="button" class="btnNextPage">
+                <i class='bx bx-check'></i>
+                Done
+            </button>
+        </div>
+    </noscript>
+
+    <script type="text/javascript">
+        window.addEventListener('load', () => {
+            window.location.href = "public/index.html";
+        });
+        document.querySelector('#btnDone').addEventListener('click', () => {
+            window.location.href = "public/index.html";
+        });
+    </script>
+
+</body>
+</html>
