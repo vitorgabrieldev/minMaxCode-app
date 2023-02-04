@@ -10,7 +10,6 @@ body, html {
     overflow-x: hidden;
 
 }
-
 /* -------------------- Settings Page Container Main --------------------  */
 .containerPage {
     position: absolute;
@@ -18,7 +17,6 @@ body, html {
     height: 100%;
     transition: .35s;
 }
-
 /* -------------------- Settings One Page --------------------  */
 .onePage {
     background: #8669D9;
@@ -27,14 +25,12 @@ body, html {
     align-items: center;
     min-height: 100vh;
 }
-
 .containerLoad {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: -3rem;
 }
-
 .MinMaxCodeTitle {
     font-size: 6rem;
     color: #fefefe; 
@@ -43,14 +39,12 @@ body, html {
     font-weight: 300;
     user-select: none;
 }
-
 .loadCircle {
     width: 5rem;
     height: 5rem;
     border: 2px solid #fefefe;
     border-radius: 50%;
 }
-
 .loadCircle::before {
     content: '';
     position: absolute;
@@ -77,9 +71,7 @@ body, html {
         display: none;
     }
 }
-
-/* Media Query One Page */
-
+/* ------------------ Media Query One Page ------------------ */
 @media screen and (max-width: 630px) {
     .MinMaxCodeTitle {
         font-size: 4rem;
@@ -93,11 +85,123 @@ body, html {
         margin: 0;
     }
 }
-
-
-
 /* -------------------- Settings One Page --------------------  */
-
 #pageSecond {
     display: none;
+}
+.TwoPage {
+    background: #fefefe;
+}
+.settingsBtn {
+    padding: 1.5rem 3rem 1.5rem 3rem;
+}
+.settingsBtn > i {
+    font-size: 2.5rem;
+    color: #5c5b5b;
+    transition: .35s;
+    cursor: pointer;
+    padding: .5rem;
+    border-radius: 12px;
+}
+.settingsBtn > i:hover {
+    transform: rotate(360deg) scale(0.9);
+    background: #282626;
+    color: #fefefe;
+}
+.settingsBtn > i:active {
+    transition: 0s;
+    background: rgb(8, 124, 232);
+}
+.containerText {
+    display: grid;
+    place-content: center;
+    height: 60%;
+}
+.textTitle {
+    color: #282626;
+    font-size: 4.2rem;
+    font-family: 'K2D', sans-serif;
+    user-select: none;
+    text-align: center;
+}
+
+.minMaxCodeText {
+    color: #8669D9;
+    background: #7a797937;
+    padding: 0 1rem 0 1rem;
+    border-radius: 12px;
+    user-select: none;
+    transition: .35s;
+    cursor: pointer;
+}
+.minMaxCodeText:hover {
+    background: #69686837;
+}
+.containerBtnNextPage {
+    display: flex;
+    justify-content: center;
+}
+.btnNextPage {
+    color: #fefefe;
+    background: #8669D9;
+    border: none;
+    font-size: 2.2rem;
+    border-radius: 32px;
+    padding: .5rem 3rem .5rem 3rem;
+    transition: .35s;
+    cursor: pointer;
+    outline: none;
+    cursor: pointer;
+}
+.btnNextPage:hover {
+    background: #0a72e8;
+    transform: scale(0.9);
+}
+.decorationDetailsContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+.detailsTransitionPage {
+    background: #afacac5e;
+    width: 12rem;
+    height: 1.3rem;
+    border-radius: 12px;
+}
+.detailsTransitionPage::before {
+    content: '';
+    position: absolute;
+    background: #afacaca3;
+    width: 6rem;
+    height: 1.3rem;
+    border-radius: 12px;
+}
+
+/* ------------------ Media Query Second Page ------------------ */
+@media screen and (max-width: 550px){
+    .textTitle {
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .settingsBtn > i {
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 350px) {
+    .textTitle {
+        font-size: 2rem;
+    }
+    .detailsTransitionPage {
+        width: 8rem;
+    }
+    .detailsTransitionPage::before {
+        width: 4rem;
+    }
+    .settingsBtn {
+        text-align: center;
+    }
+    .btnNextPage {
+        font-size: 1.2rem;
+    }
 }
