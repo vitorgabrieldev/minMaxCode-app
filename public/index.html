@@ -66,7 +66,10 @@
                     Email
                 </h1>
                 <input type="email" placeholder="Type your e-mail">
-                <h3 class="errormessage messageStyle">Mensagem de error</h3>
+                <h3 class="errormessage messageStyle hidden">
+                    <i class='bx bxs-message-square-error' ></i>
+                    This email is not registered.
+                </h3>
             </div>
             <div class="inputContainer">
                 <h1 class="titleContainerInput">
@@ -77,20 +80,32 @@
                     <i class='bx bx-show'></i>
                 </div>
                 <div class="containerMessages">
-                    <h3 class="errormessage messageStyle">Mensagem de error</h3>
+                    <h3 class="errormessage messageStyle hidden">
+                        <i class='bx bxs-message-square-error' ></i>
+                        Your password or email is incorrect.
+                    </h3>
                     <h3 class="forgotPassword messageStyle">I forgot the password</h3>
                 </div>
             </div>
+            <div class="checkboxContainer">
+                <label class="container">
+                    <input checked="checked" type="checkbox">
+                    <div class="checkmark"></div>
+                </label>
+                <h1 class="textStyleCheckbox">remember password</h1>
+            </div>
+            <div class="containerBtnLogin">
+                <button class="cssbuttons-io">
+                    <span>
+                        Login in
+                    </span>
+                </button>
+            </div>
         </form>
-        <div class="checkboxContainer">
-            <input type="checkbox" class="checkboxPassword">
-        </div>
-        <div class="containerBtnLogin">
-            <button type="button" class="btnLogin">Login in</button>
-        </div>
+
         <div class="othersOptionLoginContainer">
-            <h1 class="createAccountTitle">Create an account</h1>
-            <h2 class="otherOptionText">Other ways to enter</h2>
+            <h1 class="createAccountTitle textAccount">Create an account</h1>
+            <h2 class="otherOptionText textAccount">Other ways to enter</h2>
             <div class="optionLoginSocialMedia">
                 <div class="containerSocialMedia">
                     <i class='bx bxl-google'></i>
