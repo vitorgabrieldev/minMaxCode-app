@@ -497,8 +497,10 @@ body, html {
 }
 @media screen and (max-width: 450px) {
     .headerPageThird {
-        width: 100%;
-        border-radius: 0;
+        width: 90%;
+        border-radius: 0 0 12px 12px;
+        margin-left: 50%;
+        transform: translateX(-50%);
     }
     .inputContainer {
         width: 80%;
@@ -510,6 +512,7 @@ body, html {
     .formLogin {
         width: 100%;
         padding: .5rem;
+        margin-left: 15px;
     }
     .inputContainer {
         width: 100%;
