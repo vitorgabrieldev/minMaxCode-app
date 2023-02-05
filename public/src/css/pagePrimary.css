@@ -257,6 +257,7 @@ body, html {
     padding: 2rem;
     display: grid;
     row-gap: 2.5rem;
+    text-align: center;
 }
 .inputContainer {
     background: rgb(255, 255, 255);
@@ -463,4 +464,56 @@ body, html {
 }
 .containerSocialMedia:nth-child(2) > i {
     color: #082ba9;
+}
+/* ------------------ Media Query Third Page ------------------ */
+@media screen and (max-width: 800px) {
+    .formLogin {
+        width: 70%;
+        padding: .5rem;
+    }
+}
+@media screen and (max-width: 600px){
+    .optionLoginSocialMedia {
+        display: grid;
+        gap: 0;
+    }
+    .inputContainer > input,
+    .containerInputPassword > input {
+        font-size: .9rem;
+    }
+    .textStyleCheckbox {
+        font-size: 1.1rem;
+    }
+    .textAccount {
+        font-size: 1.4rem;
+    }
+    .containerSocialMedia {
+        font-size: 1.2rem;
+    }
+    .formLogin {
+        width: 70%;
+        padding: .5rem;
+    }
+}
+@media screen and (max-width: 450px) {
+    .headerPageThird {
+        width: 100%;
+        border-radius: 0;
+    }
+    .inputContainer {
+        width: 80%;
+        border-radius: 12px;
+        padding: 2rem;
+    }
+}
+@media screen and (max-width: 300px) {
+    .formLogin {
+        width: 100%;
+        padding: .5rem;
+    }
+    .inputContainer {
+        width: 100%;
+        border-radius: 0;
+        padding: 2rem;
+    }
 }
