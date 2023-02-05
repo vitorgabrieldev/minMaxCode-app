@@ -1,24 +1,25 @@
-window.addEventListener('load', () => settingsPage.transitionPagePrimary());
-document.querySelector('#btnNextPage').addEventListener('click', () => settingsPage.transitionPageThird());
+// window.addEventListener('load', () => settingsPage.transitionPagePrimary());
+// document.querySelector('#btnNextPage').addEventListener('click', () => settingsPage.transitionPageThird());
 
-// DOM pages
-let pageOne = document.querySelector('#pagePrimary');
-let pageTwo = document.querySelector('#pageSecond');
-let pageThird = document.querySelector('#pageThird');
+// // DOM pages
+let pageOne = document.querySelector('#pagePrimary').style.display = 'none'
+let pageTwo = document.querySelector('#pageSecond').style.display = 'none'
+let pageThird = document.querySelector('#pageThird').style.display = 'block'
 
-const settingsPage = {
-    transitionPagePrimary: function() {
-        setTimeout(() => {
-            pageOne.style.marginRight = '200%';
-            setTimeout(() => {
-                pageTwo.style.display = "block";
-            },500);
-        }, 4900);                
-    },
-    transitionPageThird: function() {
-        pageTwo.style.marginRight = '200%';
-        setTimeout(() => {
-            pageThird.style.display = "block";
-        },500);
-    },
-};
+// const settingsPage = {
+//     transitionPagePrimary: function() {
+//         setTimeout(() => {
+//             pageOne.style.marginRight = '200%';
+//             setTimeout(() => {
+//                 pageTwo.style.display = "block";
+//             },500);
+//         }, 4900);                
+//     },
+//     transitionPageThird: function() {
+//         pageTwo.style.marginRight = '200%';
+//         setTimeout(() => {
+//             pageThird.style.display = "block";
+//         },500);
+//     },
+// };
+
